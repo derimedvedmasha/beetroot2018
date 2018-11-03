@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	padding: 40px 0 10px 160px;
+}
+.search {
+	width: 960px;
+	height: 50px;
+	text-align: center;
+	font-size: 40px;
+}
+.photosearch {
+	width: 50px;
+	height: 40px;
+}
+body {
+	background: #F1F1F1;
+	font: 15px/10px Arial,sans-serif;
+	color: #CECED0;
+}
+.title {	
+	margin: 30px;
+}
+main {
+	display: flex;
+	flex-wrap: wrap;	
+	justify-content: space-around;
+	margin: 100px;
+}
+section {
+	flex-direction: column;
+}
+
+div {
+	text-align: center;
+	margin: 20px;
+}
+div a{
+	display: flex;
+	background: #EBEBED;
+	margin: 10px;
+	text-align: center;	
+}
+.photo {
+	border-radius: 50%;
+}
