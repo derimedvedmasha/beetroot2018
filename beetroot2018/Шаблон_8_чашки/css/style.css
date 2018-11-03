@@ -1,0 +1,37 @@
+body {
+	background: #fdde7e;
+	font-family: 'Lato', sans-serif;
+	color: #737373
+}
+.content {
+	display: flex;
+	margin: 50px 15px;
+	justify-content: center;
+	align-items: center;
+	}
+.card {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-between;
+	padding: 20px;
+width: 360px;
+height: 440px;
+background: white;
+margin: 0 15px;
+flex-shrink: 0;
+border-radius: 3px;
+box-shadow: 3px 0 7px rgba(0,0,0,.2);
+}
+.card__active{
+	height: 500px;
+}
+.price { 
+font-size: 35px;
+color: #02995B;
+font-weight: bold;
+}
+.color {
+	font-size: 35px;
+	color: #333333;
+}
