@@ -1,0 +1,266 @@
+html,
+body {
+    height: 100%
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image: url(../img/main.png);
+    background-size: cover;
+}
+.main {
+width: 750px ;
+height: 430px; /*todo remove*/
+background: #152335;
+z-index: 1;
+position: relative;
+margin: 0 auto;
+display: flex;
+border-radius: 12px;
+box-shadow: 0px 0px 65px 0px rgb( 0, 0, 0 );
+}
+
+.main_photo {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.photo_photo {
+    padding: 64px;
+    margin-top: 51px;
+    position: relative;
+}
+.menu_logo {
+    position: absolute;
+    padding: 15px;
+}
+.photo_thumbnail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photo_thumbnail div{
+    margin: 6px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+.photo_thumbnail .active {
+    background: #293550;
+    border: 2px solid #626873;
+    margin: 4px;
+}
+
+.photo_thumbnail div:nth-child(2){
+    background: white;
+}
+.photo_thumbnail div:nth-child(3){
+    background: #F34B42;
+}
+.photo_thumbnail div:nth-child(4){
+    background: #24E7EE;
+}
+
+.main_info {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 61px;
+    padding: 0px;
+     
+}
+.main_info-part1 {
+    font-size: 24px;
+    font-height: auto;
+    color: white;
+}
+.main_info-part2 {
+    font-size: 14px;
+    font-height: auto;
+    color: #626873;
+}
+
+.main_info-part4 { 
+ color: #626873; 
+ font-size: 14px;
+}
+.main_info-part4> a:after {
+   color: #626873;
+ content: 'â–¾';
+
+}
+.main_info-part4_button1 {
+    border: 1px solid #626873;
+    padding: 9px 0;
+    width: 55px;
+    height: 15px;
+    display: inline-block;
+}
+.main_info-part4_button2 {
+    border: 1px solid #626873;
+    padding: 9px 0;
+    width: 55px;
+    height: 15px;
+    display: inline-block;
+}
+
+.main_info-part3 {
+    padding-right:60px;
+    font-size: 12px;
+    display: rtl;
+}
+
+
+
+.main_info-part3 i:last-child {
+    color: grey;
+}
+
+.fa-star:hover ~ .fa-star,
+.fa-star:hover {
+    color: yellow;
+}
+
+html,
+body {
+    height: 100%
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image: url(../img/main.png);
+    background-size: cover;
+}
+.main {
+width: 750px ;
+height: 430px; /*todo remove*/
+background: #152335;
+z-index: 1;
+position: relative;
+margin: 0 auto;
+display: flex;
+border-radius: 12px;
+}
+.main_photo {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.photo_photo {
+    padding: 64px;
+    margin-top: 51px;
+}
+
+.photo_thumbnail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photo_thumbnail div{
+    margin: 6px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+.photo_thumbnail .active {
+    background: #293550;
+    border: 2px solid #626873;
+    margin: 4px;
+}
+
+.photo_thumbnail div:nth-child(2){
+    background: white;
+}
+.photo_thumbnail div:nth-child(3){
+    background: #F34B42;
+}
+.photo_thumbnail div:nth-child(4){
+    background: #24E7EE;
+}
+
+.main_info {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 50px;
+    padding: 11px;
+}
+.main_info-part1 {
+    font-size: 24px;
+    font-height: auto;
+    color: white;
+}
+.main_info-part2 {
+    font-size: 14px;
+    font-height: auto;
+    color: #626873;
+}
+
+.main_info-part3 {
+    padding-right:60px;
+    font-size: 12px;
+    display: rtl;
+}
+
+.main_info-part3 i:last-child {
+    color: grey;
+}
+
+.main_info-part4 a {
+ color: #626873;
+ font-size: 14px;
+ display: inline-block;
+ padding: 9px 0;
+ border: 1px solid #626873;
+ width: 65px;
+ height: 15px;
+ text-align: center;
+}
+.main_info-part4> a:after {
+   color: #626873;
+ content: ' ▼';
+}
+
+
+.fa-star:hover ~ .fa-star,
+.fa-star:hover {
+    color: yellow;
+}
+
+.main_info-part5 {
+    color: #626873;
+    border: 1px solid #626873;
+    padding: 9px;
+    width: 135px;
+    text-align: center;
+    font-size: 14px;
+    background: #2A3545;
+}
+
+
