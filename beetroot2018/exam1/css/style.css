@@ -1,0 +1,110 @@
+.header {
+  background: url(../img/header.jpg);
+  height: 100vh;
+  background-size: cover;
+  min-width: 1170px;
+  padding: 0 calc(-535%);
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  opacity: .7;
+}
+.header_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header_logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header_logo__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font: 400 18px/30px 'Open Sans', sans-serif;
+}
+.header_tel {
+  font: 400 18px/30px 'Open Sans', sans-serif;
+}
+.header_mail {
+  font: 400 13px/30px 'Open Sans', sans-serif;
+  text-decoration: underline;
+  text-align: right;
+}
+.header_title {
+  text-align: center;
+}
+.header_title header__main {
+  font: 700 40px/60px 'Open Sans', sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+.header_title header__subtitle {
+  font: 400 18px/24px 'Open Sans', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 255px 0;
+}
+.header_form {
+  margin: 0 auto;
+  width: 570px;
+  display: flex;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  height: 60px;
+  text-align: center;
+}
+.header_input {
+  width: calc(370px);
+  border: 0;
+}
+.header_input::placeholder {
+  color: ##a6a6a6;
+}
+.header .button {
+  width: 200px;
+  background: #BF0508;
+  color: white;
+  text-align: center;
+}
+.header_mouse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 25%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 56px;
+  height: 119px;
+}
+.main {
+  background: #EDEDED ;
+  min-width: 1170px;
+  padding: 0 calc(-535%);
+  font: 700 36px 'Open Sans', sans-serif, sans-serif;
+  color: #262626;
+  text-align: center;
+}
+.section_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 1170px;
+}
+.section_row__title {
+  font: 700 14px/18px 'Open Sans', sans-serif, sans-serif;
+  font-family: OpenSans;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section_row div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

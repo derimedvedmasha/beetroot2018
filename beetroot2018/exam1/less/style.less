@@ -1,0 +1,153 @@
+@font-family_main: 'Open Sans', sans-serif;
+
+
+.header {
+	background: url(../img/header.jpg) ;
+	height: 100vh;
+	background-size: cover;
+	min-width: 1170px;
+	padding: 0 calc((100% - 1170px) / 2);
+	font-family: @font-family_main;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	 opacity: .7;     //сделать потом
+	// position: absolute;
+	// &::before {
+	// 		background: #3a464f;
+	// 		position: relative; 
+	// 		opacity: .7;
+	// 	}
+	&_info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+		
+	}
+	&_logo {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		&__text {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			font: 400 18px/30px @font-family_main;
+			}
+	}
+	&_tel {
+		font: 400 18px/30px @font-family_main;
+		}
+	&_mail {
+		font: 400 13px/30px @font-family_main;
+		text-decoration: underline;
+		text-align: right;
+	}
+	&_title {
+		text-align: center;
+		
+		& header__main {
+		font: 700 40px/60px @font-family_main;
+		text-align: center;
+		color:  #ffffff;
+		
+		}
+		& header__subtitle {
+		font: 400 18px/24px @font-family_main;
+		text-align: center;
+		color:  #ffffff;
+		padding-top: 255px 0;
+
+		// transform: scaleX(1.0005);
+		}
+	}
+	&_form {
+		margin: 0 auto;
+		width: 570px;
+		display: flex;
+		border: 2px solid #fff;
+		box-sizing: border-box;
+		height: 60px;
+		text-align: center;
+
+
+	}
+	&_input {
+		// width: calc(100% - 200px);
+		width: calc(570px-200px);
+		border: 0;
+		// font: 14px/26px @fontFamilyMain;
+		&::placeholder {
+			color: ##a6a6a6;
+		}
+		
+		}
+.button {
+		width: 200px;
+		background: #BF0508;
+		color: white;
+		text-align: center;
+	}
+	&_mouse{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid transparent;
+		border-radius: 25%;
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 56px;
+		height: 119px;
+	}
+}
+.main {
+	background: #EDEDED ;
+	// height: 100vh;
+	// background-size: cover;
+	min-width: 1170px;
+	padding: 0 calc((100% - 1170px) / 2);
+	font: 700 36px  @font-family_main, sans-serif;
+	color:  #262626;
+	text-align: center;
+
+	}
+	.section_row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		min-width: 1170px;
+		&__title {
+		font: 700 14px/18px @font-family_main, sans-serif;
+		font-family: OpenSans;
+		color: black;
+		text-align: center;
+		text-transform: uppercase;
+		}
+		& div
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		// &__row2
+		// {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	justify-content: space-between;
+		// 		width: 270px;
+		// 	// height: calc(180px+35px);
+		
+		// }
+		// &__row3
+		// {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	justify-content: space-between;
+		// 	// 	width: 270px;
+		// 	// height: calk180px;
+		
+		// }
+
+	}
+
