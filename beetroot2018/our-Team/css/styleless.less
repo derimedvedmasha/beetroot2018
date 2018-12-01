@@ -1,0 +1,154 @@
+@font-family_ral: 'Raleway', sans-serif;
+@font-family_rob: 'Roboto', sans-serif;
+@font-family_open: 'Open Sans', sans-serif;
+@color_grey: #666666;
+@color_yellow: #ffcc00;
+@border: 1px solid @color_yellow;
+// @px: 1px;
+
+
+body {
+
+    border: 1px solid grey;
+    padding: 60px;
+}
+
+.header {
+	padding: 0;
+
+}
+.header_second {
+  font: 500 18px/24px @font-family_ral;
+  text-align: center;
+  color:  #898f8f;
+}
+.header_first {
+  font: 900 60px/66px @font-family_rob;
+  color: @color_yellow ;
+text-align: center;
+margin-top: 0;
+}
+
+
+.header__lines {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin: 20px;
+	}
+
+.header_line {
+	width: 210px;
+	height: 1px;
+	background:  @color_yellow;
+	    margin-left: 10px;
+	     margin-right: 10px;
+
+}
+
+.header_fire {
+	width: 16px;
+	height: 19px;
+	margin-top: -10px;
+}
+.main {
+	display: flex;
+	justify-content: center;
+	    padding: 40px;
+}
+.main__lines{
+	.header__lines()
+	}
+
+.main_photo {
+  width: 388px;
+  height: 388px;
+  margin: auto 90px;
+}
+.photo {
+width: 100%;
+height: auto;
+
+}
+
+// переделать все линии на &:before &:after 
+
+.main_line1 {
+	border: @border;
+}
+.main_line2{
+ border: 1px solid @color_yellow;
+width: 100px;
+    margin: auto;
+
+}
+.main_line3  {
+ border: 3px solid @color_yellow;
+ width: 4px;
+     margin-left: 5px;
+}
+.main_line4 {
+   border: 3px solid @color_yellow;
+    width: 14px;
+        margin-left: 5px;
+}
+.main_anketa {
+ padding: 50px;
+  text-align: center;
+  width: 388px;
+  height: 388px;
+  margin: auto 40px;
+}
+.main_icon i {
+	     border: 1px solid #cccccc;
+    color: #cccccc;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    font-size: 11px;
+    line-height: 23px;
+}
+
+.main_name {
+  font: 900 36px/24px @font-family_rob;
+  color: @color_grey;
+}
+
+.main_profession {
+  font: 400 24px/36px @font-family_ral;
+  color: @color_grey;
+}
+
+.main_text {
+font: 500 14px/24px @font-family_ral;
+color: @color_grey;
+}
+.main_button {
+	font: 700 14px/24px @font-family_open;
+	border: 2px solid @color_yellow;
+	background: white;
+	color: @color_grey;
+	padding: 10px;
+}
+.photo_thumbnail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    & div {
+  margin: 6px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+    & div:nth-child(1){
+      background: @color_yellow;
+}
+    & div:nth-child(3){
+      background: @color_yellow;
+}
+    & .active {
+    background: white;
+    border: 2px solid @color_yellow;
+    margin: 4px;
+}
+}
