@@ -11,103 +11,191 @@
 </head>
 <body>
 	<header class="header">
-		<div class=header_info>
-			<div class="header_logo">			
-				<div class="header_logo header_logo__img">
-					<img src="img/logo.png" alt="" class="logo">
+		<div class="container">
+			<div class=header_info>
+				<div class="header_logo">			
+					<div class="header_logo header_logo__img">
+						<img src="img/logo.png" alt="" class="logo">
+					</div>
+					<div class="header_logo header_logo__text">
+						<div>Юридическое агенство Санкт-Петербурга</div>
+						<!-- <div class="header_line"></div> -->
+						<div>Legal agency of St.Peterburg(основано в 2004 году)</div>
+					</div>
 				</div>
-				<div class="header_logo header_logo__text">
-					<div>Юридическое агенство Санкт-Петербурга</div>
-					<div>Legal agency of St.Peterburg(основано в 2004 году)</div>
+				<div class="header_contact">
+					<div class="header_tel">+7(812)407-10-22</div>
+					<div class="header_mail">
+						<a href="mailto:info@la-advokat.ru">info@la-advokat.ru</a>
+					</div>
 				</div>
 			</div>
-			<div class="header_contact">
-				<div class="header_tel">+7(812)407-10-22</div>
-				<div class="header_mail">
-					<a href="mailto:info@la-advokat.ru"></a>
-				</div>
+			<div class="header_title">
+				<h1 class="header__main">Юридическая консультация <br> по вопросам долевого строительства</h1>
+				<h2 class="header__subtitle">Оставьте заявку и получите <span>бесплатную консультацию</span></h2>
+			</div>
+			<form action="" class="form header_form">
+				<input type="text" class="form_input"  placeholder="Ваш номер телефона">
+				<button class="button button__search">получить</button>
+			</form>
+			<div class="header_mouse">
+				<img src="img/mouse.svg" alt="">
+				<img src="img/1.svg" alt="">
+				<img src="img/2.svg" alt="">
+				<img src="img/3.svg" alt="">
+			</div>
+		</div>
+	</header>
+
+		<main class="main">
+			<div class="container">
+				<section class="main_section">
+				<h2 class="section_title">наши услуги</h2>
+				<img src="img/scroll.svg" alt="" class="scroll">
+					<div class="section_row">
+						<div class="section_row__block"> 
+							<img src="img/services1.jpg" alt="" class="">
+							<h4 class="section_row__title">Консультация по <br> долевому строительству </h4>
+						</div>
+						<div class="section_row__block"> 
+							<img src="img/services2.jpg" alt="">
+							<h4 class="section_row__title">Досудебное <br> урегулирование споров </h4>
+						</div>
+						<div class="section_row__block"> 
+							<img src="img/services3.jpg" alt="">
+							<h4 class="section_row__title">Сопровождение в суде дел <br> по долевому строительству </h4>
+						</div>
+						<div class="section_row__block"> 
+							<img src="img/services4.jpg" alt="">
+							<h4 class="section_row__title">Услуги по минимизации <br> рисков при покупке жилья </h4>
+						</div>
+					</div>
+				</section>
+
+				<section class="main_section">
+					<h3 class="section_subtitle"> Поможем в случаях: </h3>
+					<div class="section_row">
+						<div class="section_row__block"> 
+							<img src="img/services5.jpg" alt="" class="">
+							<h4 class="section_row__title">Консультация по <br> долевому строительству </h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
+						<div class="section_row__block"> 
+							<img src="img/services6.jpg" alt="">
+							<h4 class="section_row__title">Квартира с дефектами: кривые стены,<br>
+								нарушение санитарных норм, плохая<br>сантехника и т.д.</h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
+						<div class="section_row__block"> 
+							<img src="img/services7.jpg" alt="">
+							<h4 class="section_row__title">Навязывание незаконных услуг<br>
+								(регистрация договора ДДУ и<br>регистрация собственности за плату) </h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
+					</div>
+					<div class="section_row">
+						<div class="section_row__block"> 
+							<img src="img/services8.jpg" alt="" class="">
+							<h4 class="section_row__title">Навязывание незаконных условий</h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
+						<div class="section_row__block"> 
+							<img src="img/services9.jpg" alt="">
+							<h4 class="section_row__title">Изменение плана и размеров квартиры</h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
+						<div class="section_row__block"> 
+							<img src="img/services10.jpg" alt="">
+							<h4 class="section_row__title">Другие нарушения </h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
+					</div>
+
+				</section>
+				<section>
+					<h2 class="section_title"> Проблемные обЪекты </h2>
+					<img src="img/scroll.svg" alt="" class="scroll">
+					<div class="section_row">
+						<div class="section_row1">
+							<div>СК Базис, ЖК «Люмьер»</div>
+							<div>ООО «Балтжилинвест», ЖК “Охта-Модерн”</div>
+							<div>ГК «Город» (ООО «Спутник», ООО «Планета»)<br>ЖК “Ленинский парк”</div>
+							<div>ГК «Город» ( ООО «Орбита», ООО «Азимут»)<br>ЖК “Прибалтийский”, 
+									ЖК “Морская звезда”</div>
+							<div>ООО «Г.С.К» (ЛЭК). Лондон Парк</div>
+							<div>ООО «Строительная компания<br>«Дальпитерстрой». ЖК «Шушары»</div>
+							<div>ООО «Дом-строй» (ЛидерГрупп)<br>ЖК “Южный Маяк”</div>
+							<div>ООО «ЛенСпецСтрой». ЖК “Медный всадник”</div>
+							<div>ООО «ЛЭК-1». ЖК “Граф Орлов”</div>
+							<div>02 Девелопмент. ЖК «Силы Природы»</div>
+							<div>ЗАО СК «Росстрой» (СУ-155). ЖК “Каменка”.<br>ЖК “Новая Каменка”</div>
+							<div>Айдадом (коттеджный поселок)</div>
+							<div>Легенда Девелопмент</div>
+							<div>Лидер Групп.  ЖК "Небо Москвы"<br>м. Фрунзенская</div>
+							<div>Карелия Девелопмент, Объект на участке<br>Мистолово</div>
+						</div>
+						<div class="section_row2">
+							<img src="img/obj1.jpg" alt="">
+							<div class="row2_title">СК Базис, ЖК «Люмьер»</div>
+							<div class="row2_subtitle">Неустойка за просрочку сдачи объекта. Просрочка более 2 лет по некоторым объектам.Брали денежные средства по предварительному договору — что является прямым нарушением Закона о долевом участии.</div>
+						</div> 
+					</div>
+				</section>
 			</div>
 			
-		</div>
-		<div class="header_title">
-			<h1 class=" header_title header__main">Юридическая консультация <br> по вопросам долевого строительства</h1>
-			<h2 class=" header_title header__subtitle">Оставьте заявку и получите бесплатную консультацию</h2>
-		</div>
-		<form action="" class="header_form">
-			<input type="text" class="header_input"  placeholder="Ваш номер телефона">
-			<button class="button button__search">Получить</button>
-		</form>
-		<div class="mouse">
-			<img src="img/mouse.svg" alt="">
-			<img src="img/1.svg" alt="">
-			<img src="img/2.svg" alt="">
-			<img src="img/3.svg" alt="">
-		</div>
-		</header>
-		<main class="main">
-			<section class="main_section">
-			<h2> Наши услуги</h2>
-				<div class="section_row">
-					<div class="section_row__row1"> 
-						<img src="img/services1.jpg" alt="" class="">
-						<h3 class="section_row__title">Консультация по <br> долевому строительству </h3>
-					</div>
-					<div class="section_row__row2"> 
-						<img src="img/services2.jpg" alt="">
-						<h3 class="section_row__title">Консультация по <br> долевому строительству </h3>
-					</div>
-					<div class="section_row__row3"> 
-						<img src="img/services3.jpg" alt="">
-						<h3 class="section_row__title">Консультация по <br> долевому строительству </h3>
-					</div>
-					<div class="section_row__row4"> 
-						<img src="img/services4.jpg" alt="">
-						<h3 class="section_row__title">Консультация по <br> долевому строительству </h3>
-					</div>
-					</div>
+			<section class="help">
+				<div class="container">
+					<h2 class="help_title">правовая помощь дольщикам</h2>
+					<img src="img/scroll2.svg" alt="" class="scroll">
+					<form action="" class="form main_form">
+						<input type="text" class="form_input"  placeholder="Ваш номер телефона">
+						<button class="button button__search">получить</button>
+					</form>
 				</div>
 			</section>
 
-			<section class="main_section">
-			<h2> Поможем в случаях </h2>
-				<div class="section_row">
-					<div class="section_row__row1"> 
-						<img src="img/services5.jpg" alt="" class="">
-						<h3 class="section_row__title">Консультация по <br> долевому строительству </h3>
+			<div class="container">
+				<section class="main_section">
+					<h2 class="section_title"> Распространённые нарушения<br>со стороны застройщиков </h2>
+					<h3 class="section_subtitle2"> В нашей практике выявлены наиболее распространённые нарушения даже у лидеров рынка:</h3>
+					<img src="img/scroll.svg" alt="" class="scroll">
+					<div class="section_row">
+						<div class="section_row__block"> 
+							<img src="img/11.jpg" alt="" class="">
+							<h4 class="section_row__title2">Навязанная услуга по регистрации договора долевого участия в Федеральной службе государственной регистрации кадастра и картографии (Росреестр) - практически, у всех застройщиков. </h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
+						<div class="section_row__block"> 
+							<img src="img/12.jpg" alt="">
+							<h4 class="section_row__title2">Занижение в договоре площади квартиры, с указанием, что<br> если площадь уменьшится или увеличится, то соответственно, либо застройщик вернёт разницу или клиент доплачивает за дополнительные метры (в частности, ЖК “Северная долина”, застройщик Главстрой СПб).</h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
+						<div class="section_row__block"> 
+							<img src="img/13.jpg" alt="">
+							<h4 class="section_row__title2">Нарушения в области санитарных норм: превышение аммиака в сданной квартире (в частности, ЖК Оптимист, застройщик ЮИТ) </h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
 					</div>
-					<div class="section_row__row2"> 
-						<img src="img/services6.jpg" alt="">
-						<h3 class="section_row__title">Консультация по <br> долевому строительству </h3>
+					<div class="section_row">
+						<div class="section_row__block"> 
+							<img src="img/14.jpg" alt="" class="">
+							<h4 class="section_row__title2">Некачественная отделка (например, щели в окнах), плохое теплоснабжение и т.д. (в частности, ЖК Балтийская Жемчужина)</h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
+						<div class="section_row__block"> 
+							<img src="img/15.jpg" alt="">
+							<h4 class="section_row__title2">Квартиры сданные с кривыми стенами, например, в некоторых квартирах ванны 	были установлены под наклоном, так как не помещались между стенами (в частности, ЖК Аврора, застройщик ЛСР (ГДСК)).</h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
+						<div class="section_row__block"> 
+							<img src="img/16.jpg" alt="">
+							<h4 class="section_row__title2">Предлагается к подписанию Акт осмотра квартиры<br> без осмотра, причем в Акте, который не подлежит изменению, об этом не указывается. В Акте указывается формулировка, что квартира осмотрена и клиент претензий не имеет. Если Акт не подписывается, то придется ждать еще от 2-х до 4-х месяцев до получения ключей (в частности, ЖК “Северная долина”, застройщик Главстрой СПб). </h4>
+							<button class="button button__search">получить консультацию</button>
+						</div>
 					</div>
-					<div class="section_row__row7"> 
-						<img src="img/services7.jpg" alt="">
-						<h3 class="section_row__title">Консультация по <br> долевому строительству </h3>
-					</div>
-					
-					</div>
-				</div>
-
-				<div class="section_row">
-					<div class="section_row__row1"> 
-						<img src="img/services8.jpg" alt="" class="">
-						<h3 class="section_row__title">Консультация по <br> долевому строительству </h3>
-					</div>
-					<div class="section_row__row2"> 
-						<img src="img/services9.jpg" alt="">
-						<h3 class="section_row__title">Консультация по <br> долевому строительству </h3>
-					</div>
-					<div class="section_row__row7"> 
-						<img src="img/services10.jpg" alt="">
-						<h3 class="section_row__title">Консультация по <br> долевому строительству </h3>
-					</div>
-					
-					</div>
-				</div>
-
-			</section>
-			<section>
-				<h2> Проблемные обЪекты </h2>
-			</section>
+				</section>
+			</div>
+			
 		</main>
 </body>
 </html>
