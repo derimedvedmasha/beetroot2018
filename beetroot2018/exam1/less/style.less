@@ -80,6 +80,7 @@ body {
 			font-weight: 400;
 			line-height: 24px;
 			margin-top: 65px;
+			text-transform: uppercase;
 			& span {
 			color:#ffea73;
 			}
@@ -97,7 +98,7 @@ body {
 		width: 45px;
 		height: 109px;
 		margin: 0 auto;
-		margin-top: 130px;
+		margin-top: 170px;
 	}
 }
 
@@ -110,6 +111,7 @@ body {
 			font-weight: 700;
 			color: #ffffff;
 			border: none;
+			border-radius: 0 5px 5px 0;
 	}
 
 .form {
@@ -124,14 +126,14 @@ body {
 		width: calc(570px-200px);
 		border: none;
 		padding: 20px;
+		border-radius: 5px 0 0 5px;
 		&::placeholder {
 			color: ##a6a6a6;
 			font-size: 14px;
 			font-weight: 400;
-			line-height: 72px;
+			// line-height: 14px;
 			text-align: left;
 			margin-left: 20px;
-
 					}
 	}
 	}
@@ -191,7 +193,7 @@ body {
 		padding-top: 30px;
 		font-size: 14px;
 		font-weight: 700;
-		line-height: 12px;
+		// line-height: 12px;
 		&__title {
 			color: black;
 			text-align: center;
@@ -221,6 +223,8 @@ body {
 			position: absolute;
 			top: 165px;
 			right: 70px;
+			&:hover {
+			opacity: .8};
 			}
 }
 		&__section3 {
@@ -412,7 +416,7 @@ body {
 }
 		
 	.scroll {
-		    padding-top: 20px;
+		    padding-top: 30px;
     padding-bottom: 80px;
 	}
 		
@@ -437,3 +441,30 @@ body {
 			}
 		}
 }
+	.footer {
+		background: black;
+		color: white;
+		text-align: center;
+		padding: 35px;
+		&_visa {
+			padding: 30px;
+		}
+		&_mastercard {
+			padding: 20px;
+		}
+		&_title {
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: 700;
+		}
+		&_subtitle {
+			font-size: 13px;
+			font-weight: 300;
+			color:  #bcbcbc;
+			padding: 10px;
+			&::nth-child(2) {
+				padding: 10px;
+				
+			}
+		}
+	}
