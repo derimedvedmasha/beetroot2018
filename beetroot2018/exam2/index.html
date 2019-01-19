@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>exam2</title>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/style_slider.css">
+<!-- 	<link rel="stylesheet" href="fonts/style_slider.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script>
+		$(function(){
+        $('.projects').on('click',function(){
+          $('html').animate({
+            scrollTop: $('._scroll1').offset().top
+          }, 1000);
+        });
+      });
+	</script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_menu">
+				<div class="header_menu__logo">
+					<img src="img/logo.svg" alt="">
+				</div>
+				<div class="header_menu__text">
+					<div><a href="" class="text">about us</a></div>
+					<div><a href="" class="projects">projects</a></div>
+					<a href="" class="text">news</a>
+					<a href="" class="text">contact</a>
+				</div>
+				<div class="contact_icon">
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a></i>
+				</div>
+			</div>
+			<div class="slider">
+				<div class="header_title">
+					<h1 class="header_title__title">Simple & mordern</h1>
+					<h2 class="header_title__subtitle">We make the world's beautiful every day</h2>
+				</div>
+				<div class="header_title">
+					<h1 class="header_title__title">Simple & mordern</h1>
+					<h2 class="header_title__subtitle">We make the world's beautiful every day</h2>
+				</div>
+				<div class="header_title">
+					<h1 class="header_title__title">Simple & mordern</h1>
+					<h2 class="header_title__subtitle">We make the world's beautiful every day</h2>
+				</div>
+			</div>
+			<div class="header_arrow">
+				<img src="img/arrow.png" alt="">
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="section1">
+			<div class = "section1_line"></div>
+			<h3 class = "section1_title _scroll1">What we do</h3>
+			<div class ="section1_main">
+				<div class = "section1_main__img1">><img src="img/main1.jpg" alt=""></div>
+				<div class = "section1_main__text">
+					<div class = "text1">one world</div>
+					<div class = "text2">trade center</div>
+					<p class = "text3">Increasing prosperity in our lives can be accomplished <br> 
+						by having the right frame of mind. The truth is, our<br> 
+						thoughts are very powerful.</p>
+					<button class="button">more details</button>
+					<div textall>
+						<span class = "text4"><i class="fas fa-map-marker-alt"></i></span>
+						<span class = "text5"><em>New York City, United States - 1776 feet</em></span>
+					</div>
+				</div>
+			</div>
+			<div class ="section1_main">
+				<div class = "section1_main__text">
+					<div class = "text1">one world</div>
+					<div class = "text2">trade center</div>
+					<p class = "text3">Increasing prosperity in our lives can be accomplished <br> 
+						by having the right frame of mind. The truth is, our<br> 
+						thoughts are very powerful.</p>
+					<button class="button">more details</button>
+					<div textall>
+						<span class = "text4"><i class="fas fa-map-marker-alt"></i></span>
+						<span class = "text5"><em>New York City, United States - 1776 feet</em></span>
+					</div>
+				</div>
+				<div class = "section1_main__img2"><img src="img/main2.jpg" alt=""></div>
+			</div>
+		</section>
+	</main>
+
+
+	<!-- <div class = "_map map"></div> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=createMap"></script>
+	<script>
+	   $(document).ready(function(){
+	     $('.slider').slick({
+	     dots: true,
+	     arrows: false,
+	     });
+	   });
+	</script>
+	<script>
+	var map = null;
+
+	function createMap() {
+		var loc = {lat: 47.815049, lng: 35.174411};
+		worldMap = new google.maps.Map(document.querySelector('._map'), {zoom: 16, center: loc});
+
+		document.querySelectorAll('._option').forEach(function(item){
+
+		new google.maps.Marker({
+			position: {
+			lat: +item.dataset.lat,
+			lng: +item.dataset.lng,
+			},
+			map: worldMap,
+			icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Japan_small_icon.png'
+		});
+
+		var info = new google.maps.InfoWindow({
+		content: item.text + ' position: lat = ' + item.dataset.lat + '; lng = ' + item.dataset.lng,
+		position: {
+			lat: +item.dataset.lat,
+			lng: +item.dataset.lng,
+			},
+		});
+
+		info.open(worldMap);
+			});
+			}
+
+		document.querySelector('._select').addEventListener('change', function(){
+		var dataset = this.options[this.selectedIndex].dataset;
+		worldMap.setCenter({
+			lat: +dataset.lat,
+			lng: +dataset.lng,
+			});
+		});
+	</script>
+</body>
+</html>
