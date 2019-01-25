@@ -7,36 +7,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
-	<link rel="stylesheet" href="css/style_slider.css">
+	<!-- <link rel="stylesheet" href="css/style_slider.css"> -->
 <!-- 	<link rel="stylesheet" href="fonts/style_slider.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script>
-		$(function(){
-        $('.projects').on('click',function(){
-          $('html').animate({
-            scrollTop: $('._scroll1').offset().top
-          }, 1000);
-        });
-      });
-	</script>
+	
 </head>
 <body>
 	<header class="header">
 		<div class="container">
 			<div class="header_menu">
-				<div class="header_menu__logo">
-					<img src="img/logo.svg" alt="">
-				</div>
+				<img src="img/logo.svg" alt="" class="header_menu__logo">
 				<div class="header_menu__text">
-					<div><a href="" class="text">about us</a></div>
-					<div><a href="" class="projects">projects</a></div>
-					<a href="" class="text">news</a>
-					<a href="" class="text">contact</a>
+					<div class="about">about us</div>
+					<div class="projects">projects</div>
+					<div class="news">news</div>
+					<div class="contact">contact</div>
 				</div>
 				<div class="contact_icon">
 					<a href=""><i class="fab fa-facebook-f"></i></a>
@@ -44,29 +35,28 @@
 					<a href=""><i class="fab fa-instagram"></i></a></i>
 				</div>
 			</div>
-			<div class="slider">
-				<div class="header_title">
-					<h1 class="header_title__title">Simple & mordern</h1>
-					<h2 class="header_title__subtitle">We make the world's beautiful every day</h2>
-				</div>
-				<div class="header_title">
-					<h1 class="header_title__title">Simple & mordern</h1>
-					<h2 class="header_title__subtitle">We make the world's beautiful every day</h2>
-				</div>
-				<div class="header_title">
-					<h1 class="header_title__title">Simple & mordern</h1>
-					<h2 class="header_title__subtitle">We make the world's beautiful every day</h2>
-				</div>
-			</div>
-			<div class="header_arrow">
-				<img src="img/arrow.png" alt="">
-			</div>
 		</div>
 	</header>
+	<div class="header_slider-arrow">
+		<div class="header_slider">
+			<div class="header_title slider1">
+				<h1 class="header_title__title">Simple & mordern</h1>
+				<h2 class="header_title__subtitle">We make the world's beautiful every day</h2>
+			</div>
+			<div class="header_title slider2">
+				<h1 class="header_title__title">What we do</h1>
+				<h2 class="header_title__subtitle">more details</h2>
+			</div>
+		</div>
+		<div class="header_arrow">
+			<img src="img/arrow.png" alt="">
+		</div>
+	</div>
+
 	<main>
 		<section class="section1">
-			<div class = "section1_line"></div>
-			<h3 class = "section1_title _scroll1">What we do</h3>
+			<div class = "section1_line title_line"></div>
+			<h3 class = "section1_title title _scroll_projects">What we do</h3>
 			<div class ="section1_main">
 				<div class = "section1_main__img1">><img src="img/main1.jpg" alt=""></div>
 				<div class = "section1_main__text">
@@ -75,7 +65,7 @@
 					<p class = "text3">Increasing prosperity in our lives can be accomplished <br> 
 						by having the right frame of mind. The truth is, our<br> 
 						thoughts are very powerful.</p>
-					<button class="button">more details</button>
+					<button class="section1_button button">more details</button>
 					<div textall>
 						<span class = "text4"><i class="fas fa-map-marker-alt"></i></span>
 						<span class = "text5"><em>New York City, United States - 1776 feet</em></span>
@@ -84,73 +74,186 @@
 			</div>
 			<div class ="section1_main">
 				<div class = "section1_main__text">
-					<div class = "text1">one world</div>
-					<div class = "text2">trade center</div>
-					<p class = "text3">Increasing prosperity in our lives can be accomplished <br> 
-						by having the right frame of mind. The truth is, our<br> 
-						thoughts are very powerful.</p>
-					<button class="button">more details</button>
+					<div class = "text1">international</div>
+					<div class = "text2">commerce centre</div>
+					<p class = "text3">Successful businesses have many things in common,<br> today we’ll look at the big ‘R’ of recognition and how a<br> digital advertising network may help.</p>
+					<button class="section1_button button">more details</button>
 					<div textall>
 						<span class = "text4"><i class="fas fa-map-marker-alt"></i></span>
-						<span class = "text5"><em>New York City, United States - 1776 feet</em></span>
+						<span class = "text5"><em>  Hong Kong - 1588 Feet</em></span>
 					</div>
 				</div>
 				<div class = "section1_main__img2"><img src="img/main2.jpg" alt=""></div>
 			</div>
 		</section>
+		<section class="section2">
+
+			<div class="container">
+				<div class = "section2_line title_line"></div>
+				<h3 class="section2_title title _scroll_news">latest news</h3>
+				<a href="#" class="section2_arrow arrow__prev _prevArrow"><img src="img/prev.png" alt=""></a>
+				<a href="#" class="section2_arrow arrow__next _nextArrow"><img src="img/next.png" alt=""></a>
+
+				<div class="section2_block">
+					<!-- <img src="img/prev.png" alt=""> -->
+					<div class="section2_block__detail">
+						<div class="block_photo">
+							<img src="img/news1.jpg" alt="">
+						</div>
+						<div class="block_text">
+							<div class="block_text__title">See The Unmatched Beauty Of The Great.</div>
+							<div class="block_text__subtitle">Free directories: directories are perfect for customers that are... searching for a </div>
+							<div class="block_text__info">
+								<img src="img/avatar1.png" alt="" class="avatar">
+								<div class="avatar_info">
+									<div class="avatar_info__name">Isaac Dunn</div>
+									<div class="avatar_info__date">09 Feb 2017</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section2_block__detail">
+						<div class="block_photo">
+							<img src="img/news2.jpg" alt="">
+						</div>
+						<div class="block_text">
+							<div class="block_text__title">Effective Advertising Pointers.</div>
+							<div class="block_text__subtitle">Having a home based business is a wonderful asset to your life...</div>
+							<div class="block_text__info">
+								<img src="img/avatar2.png" alt="" class="avatar">
+								<div class="avatar_info">
+									<div class="avatar_info__name">Dominic Freeman</div>
+									<div class="avatar_info__date">24 Apr 2017</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section2_block__detail">
+						<div class="block_photo">
+							<img src="img/news3.jpg" alt="">
+						</div>
+						<div class="block_text">
+							<div class="block_text__title">Hypnotize Yourself Into The Ghost.</div>
+							<div class="block_text__subtitle">There are many things that are important to catalog design....</div>
+							<div class="block_text__info">
+								<img src="img/avatar3.png" alt="" class="avatar">
+								<div class="avatar_info">
+									<div class="avatar_info__name">Alice Ward</div>
+									<div class="avatar_info__date">30 Dec Apr 2017</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section2_block__detail">
+						<div class="block_photo">
+							<img src="img/news1.jpg" alt="">
+						</div>
+						<div class="block_text">
+							<div class="block_text__title">Unmatched Beauty Of The Great. Lakes.</div>
+							<div class="block_text__subtitle">Free directories: directories are perfect for customers that are... searching for a </div>
+							<div class="block_text__info">
+								<img src="img/avatar1.png" alt="" class="avatar">
+								<div class="avatar_info">
+									<div class="avatar_info__name">Isaac Dunn</div>
+									<div class="avatar_info__date">09 Feb 2017</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section2_block__detail">
+						<div class="block_photo">
+							<img src="img/news2.jpg" alt="">
+						</div>
+						<div class="block_text">
+							<div class="block_text__title">Effective Advertising Pointers.</div>
+							<div class="block_text__subtitle">Having a home based business is a wonderful asset to your life...</div>
+							<div class="block_text__info">
+								<img src="img/avatar2.png" alt="" class="avatar">
+								<div class="avatar_info">
+									<div class="avatar_info__name">Dominic Freeman</div>
+									<div class="avatar_info__date">24 Apr 2017</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section3">
+			<div class = "section3_line title_line"></div>
+			<h3 class="section3_title title">Gallery</h3>
+			<div class="section3_block">
+				<a href="" class="section3_block__main"><img src="img/gallery1.jpg" alt=""></a>
+				<div class = "section3_block__other">
+					<a href=""><img src="img/gallery2.jpg" alt=""></a>
+					<a href=""><img src="img/gallery3.jpg" alt=""></a>
+				</div>
+				<div class = "section3_block__other"> 
+					<a href=""><img src="img/gallery4.jpg" alt=""></a>
+					<a href=""><img src="img/gallery5.jpg" alt=""></a>
+				</div>
+			</div>
+			<button class="section3_button button">see more</button>
+		</section>
 	</main>
+	<footer class="footer">
+		<div class = "_map map"></div>
+		<div class="footer_menu">
+			<img src="img/logo.svg" alt="" class="footer_menu__logo">
+			<div class="contact_icon">
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fab fa-twitter"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a></i>
+			</div>
+		</div>
+		<div class="footer_text">
+			<div>Copyrights © 2017 Monticello  </div>
+			<div class = "footer_text__slash"> | </div>
+			<div>Made with <i class="fas fa-heart"></i> by Ga Huy</div>
+		</div>
+		<div class="footer_form">
+			<div class = "footer_form__line title_line"></div>
+			<h3 class="footer_form__title title _scroll_contact">get in touch</h3>
+			<div class="footer_form__block">
+				<div class="footer_form__block-info">
+					<a href="#"><i class="fas fa-map-marker-alt"></i>  91 Nolan Extensions Suite 670</a>
+					<a href=""><i class="fas fa-phone"></i>  +001 356-868-2454</a>
+					<a href="mailto:gahuy93@gmail.com"><i class="fas fa-inbox"></i>gahuy93@gmail.com</a>
+					<a href=""><i class="far fa-clock"></i>  From 07:05AM to 19:30PM</a>
+				</div>
+				<form action="#" method="POST" class="footer_form__block-form">
+					<label class="form_label">
+						<input type="text" class="form_input" placeholder="Mollie Medina" required />
+					</label>
+					<label class="form_label">
+						<input type="text" class="form_input form_input__email" placeholder="Email" required />
+					</label>
+					<button class="footer_button button">submit</button>
+				</form>
+			</div>
+		</div>
+	</footer>
 
-
-	<!-- <div class = "_map map"></div> -->
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=createMap"></script>
-	<script>
-	   $(document).ready(function(){
-	     $('.slider').slick({
-	     dots: true,
-	     arrows: false,
-	     });
-	   });
-	</script>
+	
+	
 	<script>
 	var map = null;
 
 	function createMap() {
-		var loc = {lat: 47.815049, lng: 35.174411};
-		worldMap = new google.maps.Map(document.querySelector('._map'), {zoom: 16, center: loc});
+		var loc = {lat: 40.64531048070972, lng: -73.94499754999998};
+	
+		worldMap = new google.maps.Map(document.querySelector('._map'), {zoom: 13, center: loc});
 
-		document.querySelectorAll('._option').forEach(function(item){
+		// marker = new google.maps.Marker({
+  //           position: coordinates,
+  //           map: map
 
-		new google.maps.Marker({
-			position: {
-			lat: +item.dataset.lat,
-			lng: +item.dataset.lng,
-			},
-			map: worldMap,
-			icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Japan_small_icon.png'
-		});
-
-		var info = new google.maps.InfoWindow({
-		content: item.text + ' position: lat = ' + item.dataset.lat + '; lng = ' + item.dataset.lng,
-		position: {
-			lat: +item.dataset.lat,
-			lng: +item.dataset.lng,
-			},
-		});
-
-		info.open(worldMap);
-			});
-			}
-
-		document.querySelector('._select').addEventListener('change', function(){
-		var dataset = this.options[this.selectedIndex].dataset;
-		worldMap.setCenter({
-			lat: +dataset.lat,
-			lng: +dataset.lng,
-			});
-		});
+			};
 	</script>
 </body>
 </html>
