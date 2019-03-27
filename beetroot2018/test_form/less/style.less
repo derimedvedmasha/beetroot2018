@@ -1,0 +1,224 @@
+body {
+	background-color:  #ffffff;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+	width: 400px;
+	height: 640px;
+	font-family: 'Roboto', sans-serif;
+	position: fixed; 
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.header {
+	padding-top: 27px;
+}
+.main {
+	padding: 7px 40px 26px 38px;
+}
+
+.title {
+	color:  #333333;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.line {
+	text-align: center;
+	margin-top: -10px;
+}
+
+.line svg path{
+  fill:  red;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	&_label {
+		display: flex;
+		flex-direction: row;
+		padding-top: 39px;
+		&__icon {
+			font-size: 23px;
+			text-align: center;
+			&-man {
+				color: #999999;
+				border-bottom: 1px solid #999999;
+				width: 40px;
+				padding-bottom: 5px; 
+			}
+			&-woman{
+				color: #999999;
+				border-bottom: 1px solid #999999;
+				width: 40px;
+				padding-bottom: 5px;
+			}
+		}
+	}
+	&_caption {
+		color:  #f89921;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 4px;
+		text-align: left;
+		transform: scaleY(1.0045);
+		font-family: 'Roboto', sans-serif;
+		width: 102px;
+	}
+	&_input {
+		width: 221px;
+		border: none;
+		border-bottom: 1px solid #999999;
+		outline: none;
+		&__icon {
+			display: none;
+		}
+		&__icon:checked + i {
+			color: #f89921;
+			border-color: #f89921;
+		}
+		&:invalid {
+			border-color: red;
+		}
+		&__email {
+			background: white;
+		}
+	}
+	&_img {
+		position: absolute;
+		top: 114px;
+		left: 355px;
+		right: 0;
+		bottom: 0;
+	}
+	&_location {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 21px 0 0 0;
+		&-line {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			vertical-align: center;
+		}
+		&-text {
+			padding-left: 10px;
+			color:  #999999;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 18px;
+		}
+		&-question:hover .tooltip {
+			opacity: 1;
+			transform: translateX(0); 
+			transition-duration: 1s;
+			}
+	}
+	&_button {
+		padding: 40px;
+		background-color:  #eeeeee;
+		&-btn {
+			border-radius: 3px;
+			background-color:  #f89921;
+			width: 320px;
+			height: 40px;
+			color:  #ffffff;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 30px;
+			vertical-align: center;
+			text-transform: uppercase;
+			border: none;
+		}
+		&-descrip {
+		color:  #999999;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 18px;
+		text-align: center;
+		padding-top: 20px; 
+		& a {
+			color:  #f89921;
+			text-decoration: underline;
+		}
+		}
+	}
+}
+.tooltip {
+	opacity: 0;
+	text-align: center; 
+	border-radius: 5px;
+	position: absolute;
+	background-color:  #FAFAFA;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+	width: 189px;
+	color:  #333333;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+	right: -167px;
+	padding: 6px 0;
+	margin-top: -37px;
+	// transition: opacity 0.3s, visibility 0s linear 2s;
+	transition-duration: .2s;
+}
+.tooltip:after {
+	content: '';
+	position: absolute;
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #FAFAFA;
+	left: -9px;
+	top: 14px;
+}
+.tooltip:before {
+	content: '';
+	position: absolute;
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #b0aaaa;
+	left: -9px;
+	top: 14px;
+
+}
+
+label.error {
+	text-align: center; 
+	border-radius: 5px;
+	position: absolute;
+	z-index: 1;
+	background-color:  #ff3000;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+	width: 189px;
+	// height: 50px;
+	color:  #ffffff;
+	font-size: 12px;
+	font-weight: 400;
+	// line-height: 18px; 
+	right: -164px;
+	padding: 16px 0;
+	margin-top: -28px;
+	transition: 0.9s ease-out;
+	}
+
+.error:after {
+	content: '';
+	position: absolute;
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #ff3000;
+	left: -9px;
+	top: 14px;
+	transition: .9s;
+}
+
+.ui-autocomplete { 
+	max-height: 230px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+

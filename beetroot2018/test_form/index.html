@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/Normalize.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="autoComplete/jquery.auto-complete.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<header class="header">
+		<h1 class="title">sign up for free!</h1>
+		<div class="line">
+			<img src="img/line_left.svg" alt="" class="line_left">
+			<img src="img/circle.svg" alt="" class="line_circle">
+			<img src="img/line_right.svg" alt="" class="line_right">
+		</div> 
+	</header>
+	<form action="#" method="POST" class="form" >
+		<main class="main">
+			<label class="form_label">
+				<div class="form_caption form_caption__icon">I am</div>
+				<label class=" form_label__icon">
+					<input type="radio" name="name" class="form_input form_input__icon">
+					<i class="fas fa-mars form_label__icon-man _icon-man"></i>
+				</label>
+				<label class="form_label__icon">
+					<input type="radio" name="name" id="name" class="form_input form_input__icon">
+					<i class="fas fa-venus form_label__icon-woman _icon-woman"></i>
+				</label>
+			</label>
+			<label class="form_label">
+				<div class="form_caption">Year fo birth</div>
+				<input type="text" class="form_input _acInput" name="birth" id="birth">
+				<img src="img/arrow.svg" alt="" class="form_img _imgInput">
+			</label>
+			<label class="form_label">
+				<div class="form_caption">Email</div>
+				<input type="email" id="username" class="form_input form_input__email" name="email">
+			</label>
+			<label class="form_label">
+				<div class="form_caption">Password</div>
+				<input type="text" class="form_input" name="password" id="password">
+			</label>
+			<label class="form_label">
+				<div class="form_caption">Postal Code</div>
+				<input type="text" class="form_input" name="code" id="code">
+			</label>
+			<div for="" class="form_location">
+				<div class="form_location-line">
+					<img class="form_location-loc" src="img/location.png" alt="" >
+					<div class="form_location-text">E.g. Berlin or 10432</div>
+				</div>
+				<div class="form_location-question">
+					<img  src="img/question.png" alt="">
+					<div class="tooltip">We don’t use postal codes to cantact members directly</div>
+				</div>
+			</div>
+		</main>
+		<div class="form_button">
+			<input class="form_button-btn _validateBtn" type="submit" value="register now" >
+			<p class="form_button-descrip">By clicking the button above you agree to our 
+				<a href="#">Terms of Use</a>
+				<br>and 
+				<a href="#">Privacy Policy</a> 
+			including use of cookies.</p>
+		</div>
+	</form>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
